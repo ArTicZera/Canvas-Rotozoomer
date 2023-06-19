@@ -137,6 +137,7 @@ function updateRotation(rotation, xs)
 	switch(rotation)
 	{
 		case "ROTO": 
+			ys = xs;
 			break;
 		case "ABS":
 			ys = Math.abs(xs);
