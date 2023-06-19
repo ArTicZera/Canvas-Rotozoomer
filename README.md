@@ -17,8 +17,6 @@ Memories: http://www.sizecoding.org/wiki/Memories <br />
 <b>ChatGPT</b> - Yeah, I used it to learn how it works a rotozoomer and the math behind it, so awesome!
 
 # Screenshots
-![image](https://github.com/ArTicZera/Canvas-Rotozoomer/assets/69859148/7cd02ec1-19b2-456f-bb49-cb9cb3ba7ed4)
-https://github.com/ArTicZera/Canvas-Rotozoomer/assets/69859148/2a9a3778-cab7-4c5e-a654-3dad82710d74
-https://github.com/ArTicZera/Canvas-Rotozoomer/assets/69859148/2939c248-2ad5-4507-92f2-5ed869b7088d
+![](https://github.com/ArTicZera/Canvas-Rotozoomer/assets/69859148/7cd02ec1-19b2-456f-bb49-cb9cb3ba7ed4)
 
 
