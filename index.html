@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas</title>
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class = "page">
+		
+			<canvas id = "screen" width = "150" height = "150">
+				Your browser doesn't support canvas.
+			</canvas>
+
+			<script src = "script.js">
+				The script didn't load succesfully.
+			</script>
+			
+			<div class = "panel">
+			
+				<div id = "forms">
+					Zoom (1 --> 10)
+					<input type="range" id="Zoom" min="0.001" max="10" step="0.001" value="1" oninput="updateA()">
+					<span id="currentA">1</span>
+					
+					<br />
+					
+					Saturation (0.0001 --> 100)
+					<input type="range" id="Saturation" min="0.0001" max="100" step="0.0001" value="1" oninput="updateB()">
+					<span id="currentB">1</span>
+					
+					<br />
+					
+					Speed (0.0001 --> 10)
+					<input type="range" id="Speed" min="0.0001" max="10" step="0.0001" value="1" oninput="updateSpeed()">
+					<span id="currentSpeed">1</span>
+					
+					<br /> <br />
+					
+					Color's intensity (0 --> 1)
+					
+					<a>
+					
+						<li>
+							R
+							<input type="range" id="Red" min="0" max="1" step="0.001" value="1" oninput="updateRed()">
+							<span id="currentRed">1</span>
+						</li>
+						<li>
+							G
+							<input type="range" id="Green" min="0" max="1" step="0.001" value="1" oninput="updateGreen()">
+							<span id="currentGreen">1</span>
+						</li>
+						<li>
+							B
+							<input type="range" id="Blue" min="0" max="1" step="0.001" value="1" oninput="updateBlue()">
+							<span id="currentBlue">1</span>
+						</li>
+					
+					</a>
+					
+					<br />
+					
+					Pattern:
+					
+					<select onchange = "changePattern(event)">
+						<option>XOR</option>
+						<option>AND</option>
+						<option>OR </option>
+						<option>SHR</option>
+						<option>SHL</option>
+						<option>MOD</option>
+						<option>ADD</option>
+						<option>SUB</option>
+						<option>MUL</option>
+						<option>DIV</option>
+					</select>
+					
+					<br />
+					
+					Rotation:
+					
+					<select onchange = "changeRotation(event)">
+						<option>ABS</option>
+						<option>SIN</option>
+						<option>TAN</option>
+						<option>ASIN</option>
+						<option>ATAN</option>
+						<option>ATANH</option>
+						<option>EXP</option>
+						<option>SQRT</option>
+						<option>ROTO</option>
+					</select>
+					
+					<br />
+					
+					Bonus effects:
+					
+					<select onchange = "changeBonus(event)">
+						<option>---</option>
+						<option>Sierpinski</option>
+						<option>Secret 1</option>
+						<option>Secret 2</option>
+						<option>Secret 3</option>
+					</select>
+					
+					<br /> <br />
+					
+					<button onclick = "reset()">
+						Reset Canvas
+					</button>
+					
+					<br />
+					
+					<button onclick = "resetall()">
+						Reset All Settings
+					</button>
+					
+					<p>
+						After using a Bonus effect, go back to "---", so you can
+						change the settings!
+					</p>
+				</div>
+			</div>
+		</div>
+		<br /> <hr />
+		<h1>
+			Youtube channel: 
+			<a href = "https://www.youtube.com/@JhoPro">
+				@JhoPro
+			</a>
+		</h1>
+	</body>
+</html>
+

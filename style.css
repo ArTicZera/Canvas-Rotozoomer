@@ -1,0 +1,57 @@
+canvas 
+{ 
+	border-style:solid; border-color:#FFF; 
+	border-width:6px; width:800px; height:800px;
+	border-radius:20px; transition:border-color 2s;
+	border-color:#0F0; 
+	animation: border-color 128s infinite alternate;
+}
+
+@keyframes border-color 
+{
+  0%    { border-color: rgb(255, 0, 0)     }
+  14%   { border-color: rgb(255, 255, 0)   }
+  28%   { border-color: rgb(0, 255, 0)     }
+  42%   { border-color: rgb(0, 255, 255)   }
+  57%   { border-color: rgb(0, 0, 255)     }
+  71%   { border-color: rgb(255, 0, 255)   }
+  100%  { border-color: rgb(255, 255, 255) }
+}
+					 
+body 
+{ 
+	background-color:#000; color:#FFF;
+	font-family:Monospace
+}
+				   
+.page
+{ 
+	display:grid; grid-template-columns: 1fr 1fr;
+	grid-gap:20px;
+}
+
+.panel
+{
+	font-size:40px;
+}
+
+div a li 
+{ 
+	padding-left:32px
+}
+			
+select { font-size:80% }
+input  { font-size:80% }
+button { font-size:80%; border-radius:10px; }
+			
+h1 
+{ 
+	font-size:400%; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	text-align:center
+	
+}
+		
+h1 a:active { color:darkblue }
+
+a { text-decoration:none }
+.panel p { color:#F00; font-size:20px; }
