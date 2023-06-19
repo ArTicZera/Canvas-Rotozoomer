@@ -6,7 +6,6 @@ var h = canvas.height;
 			
 var i = 1;
 var angle = 0;
-var scale = 1;
 
 var a = 1;
 var b = 1;
@@ -43,13 +42,13 @@ function Rotozoomer()
 			if (bonus === 4)
 			{	
 				pattern = "AND"; rotation = "EXP";
-				b = 0.0001; loop = true;
+				a = 1; b = 0.0001; loop = true;
 			}
 			
 			if (bonus === 0 && loop) 
 			{
 				pattern = "XOR"; rotation = "ABS";
-				speed = 1; b = 1; loop = false;
+				a = 1; speed = 1; b = 1; loop = false;
 			}
 
 			if (bonus === 1)
@@ -61,7 +60,7 @@ function Rotozoomer()
 				cy += ay;
 				
 				pattern = "AND"; rotation = "ABS"; 
-				speed = 10; b = 1; loop = true;
+				speed = 10; a = 1; b = 1; loop = true;
 			}
 			
 			if (bonus === 2)
@@ -70,7 +69,7 @@ function Rotozoomer()
 				cy *= cy;
 				
 				pattern = "AND"; rotation = "ABS"; 
-				speed = 1; b = 1; loop = true;
+				speed = 1; a = 1; b = 1; loop = true;
 			}
 			
 			fx = updatePattern(pattern, cx, cy, a, b, i);
@@ -78,10 +77,10 @@ function Rotozoomer()
 			if (bonus === 3)
 			{
 				cx = Math.abs(Math.cos(angle) * zx - Math.sin(angle) * zy);
-			    cy = Math.abs(Math.sin(angle) * zx + Math.cos(angle) * zy);
+			        cy = Math.abs(Math.sin(angle) * zx + Math.cos(angle) * zy);
 				
 				var fx = updatePattern(pattern, x + (x ^ y), y + (x ^ y), a, b, i);
-				speed = 1; b = 1; loop = true;
+				speed = 1; a = 1; b = 1; loop = true;
 			}
 
 			ctx.fillStyle = "rgb(" + fx * red + "," + fx * green + "," + fx * blue + ")";
