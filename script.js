@@ -98,16 +98,7 @@ function changePattern(event)
 {
 	var pat = event.target.value;
 	
-	if (pat === "XOR") pattern = "XOR";
-	if (pat === "AND") pattern = "AND";
-	if (pat === "OR")  pattern = "OR";
-	if (pat === "SHR") pattern = "SHR";
-	if (pat === "SHL") pattern = "SHL";
-	if (pat === "MOD") pattern = "MOD";
-	if (pat === "ADD") pattern = "ADD";
-	if (pat === "SUB") pattern = "SUB";
-	if (pat === "MUL") pattern = "MUL";
-	if (pat === "DIV") pattern = "DIV";
+	pattern = pat;
 	
 	angle = 0; i = 0;
 }
@@ -116,15 +107,7 @@ function changeRotation(event)
 {
 	var rot = event.target.value;
 	
-	if (rot === "ROTO")  rotation = "ROTO";
-	if (rot === "ABS")   rotation = "ABS";
-	if (rot === "SIN")   rotation = "SIN";
-	if (rot === "TAN")   rotation = "TAN";
-	if (rot === "ASIN")  rotation = "ASIN";
-	if (rot === "ATAN")  rotation = "ATAN";
-	if (rot === "ATANH") rotation = "ATANH";
-	if (rot === "EXP")   rotation = "EXP";
-	if (rot === "SQRT")  rotation = "SQRT";
+	rotation = rot;
 	
 	angle = 0; i = 0;
 }
